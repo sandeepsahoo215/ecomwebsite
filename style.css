@@ -1,0 +1,351 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --primary:rgb(26, 22, 235);
+    --secondary:rgba(41, 12, 12, 0.363);
+    --light:#2f3640;
+    
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+    text-align: center;
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+.nav1 .left a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.right{
+    flex-basis: 50%;
+}
+.right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color:rgb(18, 71, 184);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+.nav2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.nav2 .nav2left,.nav2 .nav2center,.nav2 .nav2right{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.nav2 .nav2left i{
+    margin: 5px;
+}
+
+.nav2 .nav2center h1{
+    color: blue;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.nav2 .nav2center h1 span{
+    color: black;
+}
+.nav2 .nav2center p{
+    color: grey;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 35px;
+}
+.nav2 .nav2right i{
+    margin:0px 5px;
+}
+.nav3{
+    width:100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav3 ul{
+    list-style: none;
+    text-align: center;
+
+}
+.nav3 ul li{
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+
+}
+.nav3 ul li a{
+    text-decoration: none;
+    color:royalblue;
+    font-weight: 500;
+    display: block;
+    
+}
+.nav3 ul li a:hover{
+    color:rgb(228, 13, 13) ;
+
+}
+.nav3 ul li i{
+    color:black;
+    margin:0px 5px;
+
+}
+.nav3 ul ul{
+    position:absolute;
+    top: 70px;
+    left: 0px;
+    display: none;
+}
+.nav3 ul ul li{
+    background-color: rgb(185, 178, 178);
+    border-bottom: 1px solid blue;
+}
+.nav3 ul li:hover>ul{
+    display:block;
+}
+.features{
+    width:100%;
+    height:60vh;
+    background:linear-gradient(to right,rgba(0,0,0,1)20%,rgba(255,255,255,0.2)), url('./Photos/frontpage.jpeg');
+    background-size: cover;
+    background-position: top;
+    position:relative;
+}
+.featurestext{
+    max-width: 500px;
+    position:absolute;
+    top: 50%;
+    left:10%;
+    color:whitesmoke;
+    text-align: center;
+    padding:10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+.featurestext button{
+    padding:10px 20px;
+    background-color: rgb(138, 64, 64);
+    margin:10px 0px;
+    color:whitesmoke;
+    cursor: pointer;
+}
+.newarrivals{
+    padding: 50px 100px;
+}
+.product{
+    text-align: center;
+}
+.product h1{
+    color: rgb(26, 26, 153);
+    letter-spacing: 0,2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.product h1 span{
+    color: black;
+}
+.product p{
+    color: rgb(43, 41, 41);
+    margin: 10px 0px;
+}
+.allcard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+    cursor: pointer;
+}
+.allcard .card{
+    flex-basis: 20%;
+    padding:0.8rem;
+    position:relative;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s ease-in-out;
+}
+.card i{
+    color: goldenrod;
+    margin:10px 0;
+}
+.card button{
+    color:whitesmoke;
+    background-color: var(--light);
+    margin: 15px;
+    padding:5px 20px;
+}
+.card:hover img, .card:hover h1{
+    width: 80%;
+    color: var(--light);
+}
+.card::before{
+    content: '15% off';
+    width:25%;
+    height:25px;
+    line-height: 25px;
+    color:white;
+    background-color: rgb(109, 8, 8);
+    position: absolute;
+    top:0;
+    left:0;
+    padding:0px 4px;
+    transform: rotate(-20deg);
+}
+.trends{
+    padding:10px 100px;
+    background-color: rgba(0,0,0,0.01);
+}
+.tends .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+footer{
+    margin-top: 30px;
+    background-color:var(--light);
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+footer div{
+    flex-basis: 30%;
+}
+footer div h1{
+    color: rgb(231, 7, 56);
+}
+footer div h1 span{
+    color:whitesmoke;
+}
+footer div p{
+    margin:5px 0px;
+}
+footer div i{
+    margin:0px 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width:769px){
+    .nav1{
+        position:relative;
+        z-index: 2;
+        background-color: whitesmoke;
+    }
+.right i{
+    font-size: 15px;
+    margin:0px 5px;
+        
+}
+.nav2{
+    width:100%;
+    height:80px;
+}
+.nav2 .nav2left i{
+    margin: 0px;
+}
+
+.nav2 .nav2center h1{
+    
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    
+}
+.nav2 .nav2center p{
+    color: grey;
+    margin-top: 5px;
+    font-size: 9px;
+    margin-left: 35px;
+}
+.nav2 .nav2right i{
+    margin:0px 3px;
+}
+.nav3{
+    display: none;
+}
+.features{
+    background-attachment: fixed;
+}
+.newarrivals{
+    padding: 0px 50px;
+}
+.product{
+    text-align: center;
+}
+.product h1{
+    color: rgb(26, 26, 153);
+    letter-spacing: 0,2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.product h1 span{
+    color: black;
+}
+.product p{
+    color: rgb(43, 41, 41);
+    margin: 10px 0px;
+}
+.allcard{
+    margin: 2rem 0;
+    
+}
+.allcard .card{
+    flex-basis: 100%;
+    padding:0.8rem;
+    position:relative;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s ease-in-out;
+}
+.card i{
+    color: goldenrod;
+    margin:10px 0;
+}
+.card button{
+    color:whitesmoke;
+    background-color: var(--light);
+    margin: 15px;
+    padding:5px 20px;
+}
+}
